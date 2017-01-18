@@ -21,10 +21,11 @@
     <%= f.text_field :style %>
   </div>
 
-  <div class="field">
+  <div class="section-bar">
     <%= f.label :brewery_id %>
-    <%= f.number_field :brewery_id %>
+    <%= f.collection_select(:brewery_id, Brewery.all, :id, :name, {include_blank: true}) %>
   </div>
+    <br>
 
   <div class="actions">
     <%= f.submit %>

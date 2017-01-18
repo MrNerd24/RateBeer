@@ -987,3 +987,273 @@ Processing by BreweriesController#index as HTML
 Completed 200 OK in 481ms (Views: 435.2ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/" for ::1 at 2017-01-18 16:57:44 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (8.3ms)
+Completed 200 OK in 113ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beers" for ::1 at 2017-01-18 16:57:51 +0200
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (1.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered beers/index.html.erb within layouts/application (106.8ms)
+Completed 200 OK in 591ms (Views: 545.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/beers/new" for ::1 at 2017-01-18 16:58:04 +0200
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  Rendered beers/_form.html.erb (79.2ms)
+  Rendered beers/new.html.erb within layouts/application (91.2ms)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :name:Symbol):
+    23: 
+    24:   <div class="field">
+    25:     <%= f.label :brewery_id %>
+    26:     <%= f.collection_select(:beer, :brewery_id, Brewery.all, :id, :name) %>
+    27:   </div>
+    28: 
+    29:   <div class="actions">
+  
+app/views/beers/_form.html.erb:26:in `block in _app_views_beers__form_html_erb__976757919_81442740'
+app/views/beers/_form.html.erb:1:in `_app_views_beers__form_html_erb__976757919_81442740'
+app/views/beers/new.html.erb:3:in `_app_views_beers_new_html_erb___365149104_81404028'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (776.8ms)
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" ORDER BY "breweries"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/beers/new" for ::1 at 2017-01-18 17:05:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  Rendered beers/_form.html.erb (46.1ms)
+  Rendered beers/new.html.erb within layouts/application (61.1ms)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :name:Symbol):
+    23: 
+    24:   <div class="section-bar">
+    25:     <%= f.label :brewery_id %>
+    26:     <%= f.collection_select(:beer, :brewery_id, Brewery.all, :id, :name) %>
+    27:   </div>
+    28: 
+    29:   <div class="actions">
+  
+app/views/beers/_form.html.erb:26:in `block in _app_views_beers__form_html_erb__1032209518_42682560'
+app/views/beers/_form.html.erb:1:in `_app_views_beers__form_html_erb__1032209518_42682560'
+app/views/beers/new.html.erb:3:in `_app_views_beers_new_html_erb__661851024_42795288'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (724.8ms)
+Started GET "/beers/new" for ::1 at 2017-01-18 17:06:57 +0200
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  Rendered beers/_form.html.erb (16.4ms)
+  Rendered beers/new.html.erb within layouts/application (29.4ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :name:Symbol):
+    23: 
+    24:   <div class="section-bar">
+    25:     <%= f.label :brewery_id %>
+    26:     <%= f.collection_select(:beer, :brewery_id, Brewery.all, :id, :name, {include_blank: true}) %>
+    27:   </div>
+    28: 
+    29:   <div class="actions">
+  
+app/views/beers/_form.html.erb:26:in `block in _app_views_beers__form_html_erb__1032209518_47162088'
+app/views/beers/_form.html.erb:1:in `_app_views_beers__form_html_erb__1032209518_47162088'
+app/views/beers/new.html.erb:3:in `_app_views_beers_new_html_erb__661851024_47279916'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (717.5ms)
+Started GET "/beers/new" for ::1 at 2017-01-18 17:08:15 +0200
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  Rendered beers/_form.html.erb (40.1ms)
+  Rendered beers/new.html.erb within layouts/application (52.1ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `beer' for #<Beer:0x539bc98>):
+    23: 
+    24:   <div class="section-bar">
+    25:     <%= f.label :brewery_id %>
+    26:     <%= f.collection_select(:beer, Brewery.all, :id, :name, {include_blank: true}) %>
+    27:   </div>
+    28: 
+    29:   <div class="actions">
+  
+app/views/beers/_form.html.erb:26:in `block in _app_views_beers__form_html_erb__1032209518_43766916'
+app/views/beers/_form.html.erb:1:in `_app_views_beers__form_html_erb__1032209518_43766916'
+app/views/beers/new.html.erb:3:in `_app_views_beers_new_html_erb__661851024_43832040'
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (734.0ms)
+Started GET "/beers" for ::1 at 2017-01-18 17:11:31 +0200
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (1.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered beers/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 367ms (Views: 351.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/beers/new" for ::1 at 2017-01-18 17:11:46 +0200
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  Rendered beers/_form.html.erb (3.8ms)
+  Rendered beers/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 92ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beers" for ::1 at 2017-01-18 17:11:55 +0200
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (1.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered beers/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 105ms (Views: 90.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/breweries" for ::1 at 2017-01-18 17:11:57 +0200
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 91ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/breweries/3" for ::1 at 2017-01-18 17:12:08 +0200
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (1.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[36mBeer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered breweries/show.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 117ms (Views: 96.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/beers" for ::1 at 2017-01-18 17:12:09 +0200
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered beers/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 112ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beers/new" for ::1 at 2017-01-18 17:12:11 +0200
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  Rendered beers/_form.html.erb (5.0ms)
+  Rendered beers/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 105ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beers/new" for ::1 at 2017-01-18 17:12:48 +0200
+Processing by BeersController#new as HTML
+  Rendering beers/new.html.erb within layouts/application
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  Rendered beers/_form.html.erb (3.0ms)
+  Rendered beers/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 112ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beers" for ::1 at 2017-01-18 17:13:14 +0200
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered beers/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 91ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/breweries/1" for ::1 at 2017-01-18 17:13:17 +0200
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  [1m[36mBeer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  Rendered breweries/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 83ms (Views: 67.3ms | ActiveRecord: 1.0ms)
+
+

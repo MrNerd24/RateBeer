@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>RateBeer</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>RateBeer</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<nav id="navibar">
+  <%= link_to "Breweries", breweries_path %>
+  <%= link_to "Beers", beers_path %>
+  <%= link_to "Ratings", ratings_path %>
+</nav>
+
+<div id="yieldWrapper">
+  <%= yield %>
+</div>
+
+</body>
 </html>

@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+#navibar {
+    padding: 0;
+    background-color: #efefef;
+    display: block;
+    overflow: auto;
+}
+
+#navibar a {
+    display: block;
+    float: left;
+    padding: 10px;
+    height: auto;
+}
+
+#navibar a:hover {
+    background-color: #2E2F30;
+    color: white;
+}

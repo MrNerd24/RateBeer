@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= f.label :style %>
-    <%= f.text_field :style %>
+    <%= f.select :style, options_for_select(@styles) %>
   </div>
 
   <div class="section-bar">
     <%= f.label :brewery_id %>
-    <%= f.collection_select(:brewery_id, Brewery.all, :id, :name, {include_blank: true}) %>
+    <%= f.select :brewery_id, options_from_collection_for_select(@breweries, :id, :name) %>
   </div>
     <br>
 

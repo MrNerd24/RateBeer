@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails RateBeer: development" uuid="6a255ce5-cb12-4351-9a6f-91859d396e4d">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\juuso_j0pbwen\RubymineProjects\RateBeer\db\development.sqlite3</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails RateBeer: test" uuid="fb05f753-2caf-4aca-9e9e-d8c0cbf6530a">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\juuso_j0pbwen\RubymineProjects\RateBeer\db\test.sqlite3</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= "#{@beer_club.name} #{@beer_club.city}" %>
+</h1>
+
+<p>
+  <strong>Founded:</strong>
+  <%= @beer_club.founded %>
+</p>
+
+<% if (current_user) && (not @beer_club.users.include?(current_user))%>
+    <%= form_for(@membership) do |f| %>
+        <% if @membership.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@membership.errors.count, "error") %> prohibited this membership from being saved:</h2>
+
+              <ul>
+                <% @membership.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+
+
+        <%= f.hidden_field :user_id, value: current_user.id %>
+        <%= f.hidden_field :beer_club_id, value: @beer_club.id %>
+
+        <div class="actions">
+          <%= f.submit "Join" %>
+        </div>
+    <% end %>
+<% end %>
+
+<h2>Members</h2>
+<ul>
+  <% @beer_club.users.each do |user| %>
+      <li><%= link_to user.username, user_path(user) %></li>
+  <% end %>
+</ul>
+
+
+
+
+
+<%= link_to 'Edit', edit_beer_club_path(@beer_club) %> |
+<%= link_to 'Back', beer_clubs_path %>

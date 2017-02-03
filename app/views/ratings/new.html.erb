@@ -16,5 +16,8 @@
 
     beer: <%= f.select :beer_id, options_from_collection_for_select(@beers, :id, :to_s) %>
     score: <%= f.number_field :score %>
+    <% if current_user %>
+        <%= f.hidden_field :user_id, value: current_user.id %>
+    <% end %>
     <%= f.submit %>
 <% end %>

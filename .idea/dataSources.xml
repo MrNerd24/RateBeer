@@ -8,6 +8,14 @@
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\juuso_j0pbwen\RubymineProjects\RateBeer\db\development.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.8.11.2/sqlite-jdbc-3.8.11.2.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.8.11.2/xerial-sqlite-license.txt</url>
+        </library>
+      </libraries>
     </data-source>
     <data-source source="LOCAL" name="Rails RateBeer: test" uuid="fb05f753-2caf-4aca-9e9e-d8c0cbf6530a">
       <driver-ref>sqlite.xerial</driver-ref>
@@ -16,6 +24,14 @@
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\juuso_j0pbwen\RubymineProjects\RateBeer\db\test.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.8.11.2/sqlite-jdbc-3.8.11.2.jar</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.8.11.2/xerial-sqlite-license.txt</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

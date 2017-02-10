@@ -1,6 +1,5 @@
 class BreweriesController < ApplicationController
   before_action :set_brewery, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate, only: [:destroy]
 
   # GET /breweries
   # GET /breweries.json
@@ -15,16 +14,19 @@ class BreweriesController < ApplicationController
 
   # GET /breweries/new
   def new
+    ensure_that_signed_in
     @brewery = Brewery.new
   end
 
   # GET /breweries/1/edit
   def edit
+    ensure_that_signed_in
   end
 
   # POST /breweries
   # POST /breweries.json
   def create
+    ensure_that_signed_in
     @brewery = Brewery.new(brewery_params)
 
     respond_to do |format|
@@ -41,6 +43,7 @@ class BreweriesController < ApplicationController
   # PATCH/PUT /breweries/1
   # PATCH/PUT /breweries/1.json
   def update
+    ensure_that_signed_in
     respond_to do |format|
       if @brewery.update(brewery_params)
         format.html { redirect_to @brewery, notice: 'Brewery was successfully updated.' }
@@ -55,6 +58,7 @@ class BreweriesController < ApplicationController
   # DELETE /breweries/1
   # DELETE /breweries/1.json
   def destroy
+    ensure_that_signed_in
     @brewery.destroy
     respond_to do |format|
       format.html { redirect_to breweries_url, notice: 'Brewery was successfully destroyed.' }
@@ -75,11 +79,5 @@ class BreweriesController < ApplicationController
 
   private
 
-  def authenticate
-    admin_accounts = {"admin" => "secret", "pekka" => "beer", "arto" => "foobar", "matti" => "ittam"}
 
-    authenticate_or_request_with_http_basic do |username, password|
-      admin_accounts[username] == password
-    end
-  end
 end

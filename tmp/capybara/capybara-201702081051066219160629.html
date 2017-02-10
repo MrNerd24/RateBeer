@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RateBeer</title>
+  
+
+  <link rel="stylesheet" media="all" href="/assets/application-828b00bb7e1e92ed8ef8d9ccd0bf80fcba49f33e0595bf6c49db86f3d2435dc2.css" data-turbolinks-track="reload" />
+  <script src="/assets/application-4493da07752baebff58951280f1f8b20bd123832ed4a24ebfb304aaed76cc4b2.js" data-turbolinks-track="reload"></script>
+</head>
+
+<body>
+<nav id="navibar">
+  <a href="/breweries">Breweries</a>
+  <a href="/beers">Beers</a>
+  <a href="/ratings">Ratings</a>
+  <a href="/users">Users</a>
+  <a href="/beer_clubs">Clubs</a>
+      <a href="/session/new">Signin</a>
+      <a href="/users/new">Signup</a>
+</nav>
+
+<div id="yieldWrapper">
+  <h1>New Beer</h1>
+
+<form class="new_beer" id="new_beer" action="/beers" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+    <div id="error_explanation">
+      <h2>1 error prohibited this beer from being saved:</h2>
+
+      <ul>
+        <li>Brewery must exist</li>
+      </ul>
+    </div>
+
+  <div class="field">
+    <label for="beer_name">Name</label>
+    <input type="text" value="Testahol" name="beer[name]" id="beer_name" />
+  </div>
+
+  <div class="field">
+    <label for="beer_style">Style</label>
+    <select name="beer[style]" id="beer_style"><option value="Weizen">Weizen</option>
+<option value="Lager">Lager</option>
+<option value="Pale ale">Pale ale</option>
+<option value="IPA">IPA</option>
+<option value="Porter">Porter</option></select>
+  </div>
+
+  <div class="section-bar">
+    <label for="beer_brewery_id">Brewery</label>
+    <select name="beer[brewery_id]" id="beer_brewery_id"></select>
+  </div>
+    <br>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Create Beer" data-disable-with="Create Beer" />
+  </div>
+</form>
+
+<a href="/beers">Back</a>
+
+</div>
+
+</body>
+</html>

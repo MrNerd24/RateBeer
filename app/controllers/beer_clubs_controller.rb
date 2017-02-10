@@ -15,16 +15,19 @@ class BeerClubsController < ApplicationController
 
   # GET /beer_clubs/new
   def new
+    ensure_that_signed_in
     @beer_club = BeerClub.new
   end
 
   # GET /beer_clubs/1/edit
   def edit
+    ensure_that_signed_in
   end
 
   # POST /beer_clubs
   # POST /beer_clubs.json
   def create
+    ensure_that_signed_in
     @beer_club = BeerClub.new(beer_club_params)
 
     respond_to do |format|
@@ -41,6 +44,7 @@ class BeerClubsController < ApplicationController
   # PATCH/PUT /beer_clubs/1
   # PATCH/PUT /beer_clubs/1.json
   def update
+    ensure_that_signed_in
     respond_to do |format|
       if @beer_club.update(beer_club_params)
         format.html { redirect_to @beer_club, notice: 'Beer club was successfully updated.' }
@@ -55,6 +59,7 @@ class BeerClubsController < ApplicationController
   # DELETE /beer_clubs/1
   # DELETE /beer_clubs/1.json
   def destroy
+    ensure_that_signed_in
     @beer_club.destroy
     respond_to do |format|
       format.html { redirect_to beer_clubs_url, notice: 'Beer club was successfully destroyed.' }

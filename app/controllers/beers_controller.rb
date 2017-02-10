@@ -1,5 +1,6 @@
 class BeersController < ApplicationController
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
+  before_action :set_breweries_and_styles_for_template, only: [:new, :edit, :create, :update]
 
   # GET /beers
   # GET /beers.json
@@ -14,20 +15,19 @@ class BeersController < ApplicationController
 
   # GET /beers/new
   def new
+    ensure_that_signed_in
     @beer = Beer.new
-    @breweries = Brewery.all
-    @styles = ["Weizen", "Lager", "Pale ale", "IPA", "Porter"]
   end
 
   # GET /beers/1/edit
   def edit
-    @breweries = Brewery.all
-    @styles = ["Weizen", "Lager", "Pale ale", "IPA", "Porter"]
+    ensure_that_signed_in
   end
 
   # POST /beers
   # POST /beers.json
   def create
+    ensure_that_signed_in
     @beer = Beer.new(beer_params)
 
     respond_to do |format|
@@ -35,17 +35,21 @@ class BeersController < ApplicationController
         format.html { redirect_to beers_path, notice: 'Beer was successfully created.' }
         format.json { render :show, status: :created, location: @beer }
       else
-        @breweries = Brewery.all
-        @styles = ["Weizen", "Lager", "Pale ale", "IPA", "Porter"]
         format.html { render :new }
         format.json { render json: @beer.errors, status: :unprocessable_entity }
       end
     end
   end
 
+  def set_breweries_and_styles_for_template
+    @breweries = Brewery.all
+    @styles = ["Weizen", "Lager", "Pale ale", "IPA", "Porter"]
+  end
+
   # PATCH/PUT /beers/1
   # PATCH/PUT /beers/1.json
   def update
+    ensure_that_signed_in
     respond_to do |format|
       if @beer.update(beer_params)
         format.html { redirect_to @beer, notice: 'Beer was successfully updated.' }
@@ -60,6 +64,7 @@ class BeersController < ApplicationController
   # DELETE /beers/1
   # DELETE /beers/1.json
   def destroy
+    ensure_that_signed_in
     @beer.destroy
     respond_to do |format|
       format.html { redirect_to beers_url, notice: 'Beer was successfully destroyed.' }

@@ -5,14 +5,32 @@
 </h1>
 
 <p>
-  ratings: <%= @user.ratings.count %>
+  Ratings: <%= @user.ratings.count %>
 </p>
 <p>
   Average rating: <%= @user.average_rating %>
 </p>
 
+<% unless @user.favorite_style.nil? %>
+    <p>
+      Favorite style: <%= @user.favorite_style %>
+    </p>
+<% end %>
+
+<% unless @user.favorite_brewery.nil? %>
+    <p>
+      Favorite Brewery: <%= @user.favorite_brewery %>
+    </p>
+<% end %>
+
 <p>
-  Member of
+  <% if @user.beer_clubs.empty? %>
+      Not a member of any club.
+  <% else %>
+      Member of
+  <% end %>
+
+
   <% @user.beer_clubs.each do |beerClub| %>
       <%= link_to "#{beerClub.name}", beer_club_path(beerClub) %>
   <% end %>

@@ -2,6 +2,7 @@ require 'simplecov'
 SimpleCov.start 'rails'
 
 require 'capybara/rspec'
+require 'webmock/rspec'
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'

@@ -33,6 +33,30 @@
     <% end %>
 <% end %>
 
+<% if (current_user) && @beer_club.users.include?(current_user)%>
+    <%= form_for(@membership, method: "delete") do |f| %>
+        <% if @membership.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@membership.errors.count, "error") %> prohibited this membership from being saved:</h2>
+
+              <ul>
+                <% @membership.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+
+
+        <%= f.hidden_field :user_id, value: current_user.id %>
+        <%= f.hidden_field :beer_club_id, value: @beer_club.id %>
+
+        <div class="actions">
+          <%= f.submit "End membership" %>
+        </div>
+    <% end %>
+<% end %>
+
 <h2>Members</h2>
 <ul>
   <% @beer_club.users.each do |user| %>

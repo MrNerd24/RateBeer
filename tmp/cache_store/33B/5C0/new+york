@@ -1,0 +1,349 @@
+o: ActiveSupport::Cache::Entry:@value[œU:
+Place{:idI"580:ET:	nameI"#Heartland Brewery Union Square;	T:statusI"Brewpub;	T:reviewlinkI")https://beermapping.com/location/580;	T:proxylinkI"<http://beermapping.com/maps/proxymaps.php?locid=580&d=5;	T:blogmapI"Fhttp://beermapping.com/maps/blogproxy.php?locid=580&d=1&type=norm;	T:streetI"35 Union Square West;	T:	cityI"New York;	T:
+stateI"NY;	T:zipI"
+10003;	T:countryI"United States;	T:
+phoneI"(212) 645-3400;	T:overallI"66.6666;	T:imagecountI"0;	TU;{;I"	3167;	T;
+I"Cafe d'Alsace;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/3167;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=3167&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=3167&d=1&type=norm;	T;I"1695 2nd Avenue;	T;I"New York City;	T;I"NY;	T;I"
+10128;	T;I"United States;	T;I"212-722-5133;	T;I"0;	T;I"0;	TU;{;I"	1403;	T;
+I"West End, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1403;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1403&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1403&d=1&type=norm;	T;I"2911 Broadway;	T;I"New York;	T;I"NY;	T;I"
+10025;	T;I"United States;	T;I"(212) 662-8830;	T;I"0;	T;I"0;	TU;{;I"	1617;	T;
+I"169 Bar;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1617;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1617&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1617&d=1&type=norm;	T;I"169 East Broadway;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"(212) 473-8866 ;	T;I"0;	T;I"0;	TU;{;I"	1618;	T;
+I""Alta Mediterranean Restaurant;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1618;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1618&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1618&d=1&type=norm;	T;I"64 West 10th Street;	T;I"New York;	T;I"NY;	T;I"
+10011;	T;I"United States;	T;I"(212) 505-7777 ;	T;I"0;	T;I"0;	TU;{;I"	1619;	T;
+I"Anotheroom;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1619;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1619&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1619&d=1&type=norm;	T;I"249 West Broadway;	T;I"New York;	T;I"NY;	T;I"
+10013;	T;I"United States;	T;I"(212) 226-1418 ;	T;I"0;	T;I"0;	TU;{;I"	1620;	T;
+I"Barrow Street Ale House;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1620;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1620&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1620&d=1&type=norm;	T;I"15 Barrow Street;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 691-6127 ;	T;I"39.9998;	T;I"0;	TU;{;I"	1621;	T;
+I"Becketts Bar and Grill;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1621;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1621&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1621&d=1&type=norm;	T;I"81 Pearl St.;	T;I"New York;	T;I"NY;	T;I"
+10004;	T;I"United States;	T;I"(212) 269-1001;	T;I"0;	T;I"0;	TU;{;I"	1622;	T;
+I"Becky's;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1622;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1622&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1622&d=1&type=norm;	T;I"1156 1st Ave;	T;I"New York;	T;I"NY;	T;I"
+10021;	T;I"United States;	T;I"(212) 317-8929 ;	T;I"0;	T;I"0;	TU;{;I"	1623;	T;
+I"Beer Bar At Cafe Centro;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1623;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1623&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1623&d=1&type=norm;	T;I",200 Park Ave (Met Life Bldg, at 45th St;	T;I"New York;	T;I"NY;	T;I"
+10166;	T;I"United States;	T;I"(212) 818-1222 ;	T;I"0;	T;I"0;	TU;{;I"	1624;	T;
+I"Bistro Ten 18;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1624;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1624&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1624&d=1&type=norm;	T;I""1018 Amsterdam Ave. at110 St.;	T;I"New York;	T;I"NY;	T;I"
+10025;	T;I"United States;	T;I"(212) 662-7600 ;	T;I"0;	T;I"0;	TU;{;I"	1625;	T;
+I"Blue Smoke;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1625;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1625&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1625&d=1&type=norm;	T;I"116 East 27th Street;	T;I"New York;	T;I"NY;	T;I"
+10016;	T;I"United States;	T;I"(212) 447-7733;	T;I"0;	T;I"0;	TU;{;I"	1626;	T;
+I"Boss Tweed's;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1626;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1626&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1626&d=1&type=norm;	T;I"115 Essex St;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"(212) 475-9997 ;	T;I"0;	T;I"0;	TU;{;I"	1627;	T;
+I"Brass Monkey;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1627;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1627&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1627&d=1&type=norm;	T;I"55 Little West 12th St;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 675-6686 ;	T;I"64.99995;	T;I"0;	TU;{;I"	1628;	T;
+I"Brother's Barbeque;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1628;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1628&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1628&d=1&type=norm;	T;I"225 Varick Street;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 727-2775 ;	T;I"0;	T;I"0;	TU;{;I"	1629;	T;
+I"Burp Castle;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1629;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1629&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1629&d=1&type=norm;	T;I"+41 E. 7th St. Between 2nd and 3rd Ave.;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 982-4576 ;	T;I"71.66675;	T;I"0;	TU;{;I"	1630;	T;
+I"BXL Cafe;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1630;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1630&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1630&d=1&type=norm;	T;I"125 West 43rd St;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 768-0200 ;	T;I"0;	T;I"1;	TU;{;I"	1631;	T;
+I"Cafe De Bruxelles;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1631;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1631&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1631&d=1&type=norm;	T;I"118 Greenwich Avenue;	T;I"New York;	T;I"NY;	T;I"
+10011;	T;I"United States;	T;I"(212) 206-1830 ;	T;I"0;	T;I"0;	TU;{;I"	1634;	T;
+I"City Hall Restaurant;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1634;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1634&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1634&d=1&type=norm;	T;I"131-135 Duane St;	T;I"New York;	T;I"NY;	T;I"
+10013;	T;I"United States;	T;I"(212) 227-7777;	T;I"0;	T;I"0;	TU;{;I"	1636;	T;
+I"Croxley Ales;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1636;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1636&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1636&d=1&type=norm;	T;I"28 Avenue B;	T;I"New York;	T;I"NY;	T;I"
+10009;	T;I"United States;	T;I"(212) 253-6140 ;	T;I"0;	T;I"0;	TU;{;I"	1637;	T;
+I"d.b.a.;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1637;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1637&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1637&d=1&type=norm;	T;I"41 First Ave;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 475-5097;	T;I"86.6667;	T;I"0;	TU;{;I"	1638;	T;
+I"David Copperfield's;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1638;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1638&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1638&d=1&type=norm;	T;I"1394 York Ave.;	T;I"New York;	T;I"NY;	T;I"
+10021;	T;I"United States;	T;I"(212) 734-6152;	T;I"0;	T;I"0;	TU;{;I"	1639;	T;
+I"'Dinosaur Bar-B-Que - New York City;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1639;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1639&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1639&d=1&type=norm;	T;I"646 W. 131 St;	T;I"New York;	T;I"NY;	T;I"
+10027;	T;I"United States;	T;I"(212) 694-1777;	T;I"0;	T;I"0;	TU;{;I"	1640;	T;
+I"Dive 75;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1640;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1640&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1640&d=1&type=norm;	T;I"101 West 75th Street;	T;I"New York;	T;I"NY;	T;I"
+10023;	T;I"United States;	T;I"(212) 362-7518;	T;I"0;	T;I"0;	TU;{;I"	1641;	T;
+I"Divine Bar;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1641;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1641&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1641&d=1&type=norm;	T;I"244 E 51st St;	T;I"New York;	T;I"NY;	T;I"
+10022;	T;I"United States;	T;I"(212) 319-WINE;	T;I"0;	T;I"0;	TU;{;I"	1642;	T;
+I"Eamon Doron's;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1642;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1642&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1642&d=1&type=norm;	T;I"998 Second Ave.;	T;I"New York;	T;I"NY;	T;I"
+10022;	T;I"United States;	T;I"(212) 755-9191 ;	T;I"0;	T;I"0;	TU;{;I"	1643;	T;
+I"Eastside Steak and Ale;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1643;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1643&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1643&d=1&type=norm;	T;I"1134 1st Ave;	T;I"New York;	T;I"NY;	T;I"
+10021;	T;I"United States;	T;I"(212) 223-5800 ;	T;I"0;	T;I"0;	TU;{;I"	1644;	T;
+I"Fiddlesticks Pub and Grill;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1644;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1644&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1644&d=1&type=norm;	T;I"56 Greenwich Ave;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 463-0516;	T;I"0;	T;I"0;	TU;{;I"	1645;	T;
+I"Five Points Restaurant;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1645;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1645&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1645&d=1&type=norm;	T;I"31 Great Jones St;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"(212) 253-5700;	T;I"0;	T;I"0;	TU;{;I"	1646;	T;
+I"Fraunces Tavern;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1646;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1646&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1646&d=1&type=norm;	T;I"54 Pearl Street;	T;I"New York;	T;I"NY;	T;I"
+10004;	T;I"United States;	T;I"(212) 968-1776;	T;I"0;	T;I"0;	TU;{;I"	1647;	T;
+I"Full Shilling, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1647;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1647&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1647&d=1&type=norm;	T;I"160 Pearl Street;	T;I"New York;	T;I"NY;	T;I"
+10005;	T;I"United States;	T;I"(212) 422-3855;	T;I"75.833125;	T;I"0;	TU;{;I"	1648;	T;
+I"George Keeley's;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1648;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1648&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1648&d=1&type=norm;	T;I"485 Amsterdam Avenue;	T;I"New York;	T;I"NY;	T;I"
+10024;	T;I"United States;	T;I"(212) 873-0251;	T;I"80.00005;	T;I"0;	TU;{;I"	1649;	T;
+I"Ginger Man, The - New York;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1649;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1649&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1649&d=1&type=norm;	T;I"11 East 36th Street;	T;I"New York;	T;I"NY;	T;I"
+10016;	T;I"United States;	T;I"(212) 532-3740;	T;I"87.50005;	T;I"0;	TU;{;I"	1650;	T;
+I"
+Grace;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1650;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1650&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1650&d=1&type=norm;	T;I"114 Franklin St;	T;I"New York;	T;I"NY;	T;I"
+10013;	T;I"United States;	T;I"(212) 343-4200;	T;I"0;	T;I"0;	TU;{;I"	1651;	T;
+I"Gramercy Tavern;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1651;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1651&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1651&d=1&type=norm;	T;I"42 East 20th St.;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 477-0777;	T;I"0;	T;I"0;	TU;{;I"	1652;	T;
+I",Grand Central Oyster Bar and Restaurant;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1652;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1652&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1652&d=1&type=norm;	T;I"Grand Central Station;	T;I"New York;	T;I"NY;	T;I"
+10017;	T;I"United States;	T;I"(212) 490-6650;	T;I"0;	T;I"0;	TU;{;I"	1653;	T;
+I"Greenwich Brewing Company;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1653;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1653&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1653&d=1&type=norm;	T;I"418 Sixth Avenue;	T;I"New York;	T;I"NY;	T;I"
+10011;	T;I"United States;	T;I"(212) 477-8744 ;	T;I"0;	T;I"0;	TU;{;I"	1654;	T;
+I"Greenwich Village Bistro;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1654;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1654&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1654&d=1&type=norm;	T;I"13 Carmine St;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 206-9777;	T;I"0;	T;I"0;	TU;{;I"	1655;	T;
+I"Grey Dog, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1655;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1655&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1655&d=1&type=norm;	T;I"33 Carmine Street;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 462-0041 ;	T;I"0;	T;I"0;	TU;{;I"	1656;	T;
+I"Hallo Berlin;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1656;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1656&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1656&d=1&type=norm;	T;I"626 10th Ave At 44th St;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 541-6248;	T;I"0;	T;I"0;	TU;{;I"	1657;	T;
+I"$Heartland Brewery and Beer Hall;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1657;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1657&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1657&d=1&type=norm;	T;I"93 South Street;	T;I"New York;	T;I"NY;	T;I"
+10038;	T;I"United States;	T;I"(646) 572-BEER;	T;I"0;	T;I"0;	TU;{;I"	1658;	T;
+I"$Heartland Brewery and Chophouse;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1658;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1658&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1658&d=1&type=norm;	T;I"127 West 43rd St;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(646) 366-0235;	T;I"70;	T;I"1;	TU;{;I"	1659;	T;
+I"%Heartland Brewery And Rotisserie;	T;I"Brewpub;	T;I"*https://beermapping.com/location/1659;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1659&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1659&d=1&type=norm;	T;I"350 Fifth Ave;	T;I"New York;	T;I"NY;	T;I"
+10118;	T;I"United States;	T;I"(212) 563-3433;	T;I"72;	T;I"4;	TU;{;I"	1661;	T;
+I"Heidelberg Restaurant;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1661;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1661&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1661&d=1&type=norm;	T;I"1648 Second Avenue;	T;I"New York;	T;I"NY;	T;I"
+10028;	T;I"United States;	T;I"(212) 628-2332 ;	T;I"0;	T;I"0;	TU;{;I"	1662;	T;
+I"Hop Devil Grill;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1662;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1662&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1662&d=1&type=norm;	T;I"129 St. Marks Place;	T;I"New York;	T;I"NY;	T;I"
+10009;	T;I"United States;	T;I"(212) 533-4467;	T;I"73.3335;	T;I"0;	TU;{;I"	1663;	T;
+I"!House Of Brews - 46th Street;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1663;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1663&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1663&d=1&type=norm;	T;I"363 W 46th St;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 245-0551;	T;I"0;	T;I"5;	TU;{;I"	1664;	T;
+I"$House Of Brews - W. 51st Street;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1664;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1664&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1664&d=1&type=norm;	T;I"302 West 51st Street;	T;I"New York;	T;I"NY;	T;I"
+10019;	T;I"United States;	T;I"(212) 541-7080;	T;I"68.33345;	T;I"0;	TU;{;I"	1665;	T;
+I"Jake's Dilemma;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1665;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1665&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1665&d=1&type=norm;	T;I"430 Amsterdam Avenue;	T;I"New York;	T;I"NY;	T;I"
+10024;	T;I"United States;	T;I"(212) 580-0556;	T;I"0;	T;I"0;	TU;{;I"	1666;	T;
+I"Jekyll And Hyde;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1666;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1666&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1666&d=1&type=norm;	T;I"91 7th Avenue;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 989-7701;	T;I"50;	T;I"0;	TU;{;I"	1667;	T;
+I"Jeremy's Ale House;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1667;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1667&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1667&d=1&type=norm;	T;I"254 Front Street;	T;I"New York;	T;I"NY;	T;I"
+10038;	T;I"United States;	T;I"(212) 964-3537 ;	T;I"0;	T;I"0;	TU;{;I"	1668;	T;
+I"Jimmy's;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1668;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1668&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1668&d=1&type=norm;	T;I"43 East 7th St. Basement;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 982-3006 ;	T;I"0;	T;I"0;	TU;{;I"	1669;	T;
+I"Kinsale Tavern;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1669;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1669&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1669&d=1&type=norm;	T;I"1672 3rd Avenue;	T;I"New York;	T;I"NY;	T;I"
+10128;	T;I"United States;	T;I"(212) 348-4370 ;	T;I"0;	T;I"0;	TU;{;I"	1670;	T;
+I")Lederhosen-German Wurst and Bierhaus;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1670;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1670&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1670&d=1&type=norm;	T;I"39 Grove Street;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 206-7691;	T;I"0;	T;I"0;	TU;{;I"	1671;	T;
+I"&Loreley Restaurant and Biergarten;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1671;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1671&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1671&d=1&type=norm;	T;I"7 Rivington Street;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"(212) 253-7077;	T;I"0;	T;I"0;	TU;{;I"	1672;	T;
+I"Maggie's Place;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1672;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1672&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1672&d=1&type=norm;	T;I"21 E. 47th St.;	T;I"New York;	T;I"NY;	T;I"
+10017;	T;I"United States;	T;I"(212) 753-5757;	T;I"0;	T;I"0;	TU;{;I"	1673;	T;
+I"Manchester Pub;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1673;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1673&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1673&d=1&type=norm;	T;I"920 2nd Ave.;	T;I"New York;	T;I"NY;	T;I"
+10017;	T;I"United States;	T;I"(212) 223-7484 ;	T;I"49.9999;	T;I"0;	TU;{;I"	1674;	T;
+I"
+Markt;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1674;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1674&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1674&d=1&type=norm;	T;I"401 West 14 St.;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 727-3314 ;	T;I"0;	T;I"0;	TU;{;I"	1675;	T;
+I"Marseille;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1675;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1675&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1675&d=1&type=norm;	T;I"630 9th Ave;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 333-3410;	T;I"0;	T;I"0;	TU;{;I"	1676;	T;
+I"McSorley's Old Ale House;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1676;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1676&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1676&d=1&type=norm;	T;I"15 E. Seventh Street;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 473-9148 ;	T;I"53.8888;	T;I"0;	TU;{;I"	1677;	T;
+I"Mickey's Blue Room;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1677;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1677&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1677&d=1&type=norm;	T;I"171 Avenue C;	T;I"New York;	T;I"NY;	T;I"
+10009;	T;I"United States;	T;I"(212) 375-0723 ;	T;I"0;	T;I"0;	TU;{;I"	1678;	T;
+I")Molly's Pub and Restaurant - Shebeen;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1678;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1678&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1678&d=1&type=norm;	T;I"287 3rd Ave;	T;I"New York;	T;I"NY;	T;I"
+10010;	T;I"United States;	T;I"(212) 889-3361;	T;I"0;	T;I"0;	TU;{;I"	1679;	T;
+I" Old Town Bar and Restaurant;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1679;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1679&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1679&d=1&type=norm;	T;I"45 East 18th St.;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 529-6732 ;	T;I"0;	T;I"0;	TU;{;I"	1680;	T;
+I"Onion, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1680;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1680&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1680&d=1&type=norm;	T;I"961 2nd Avenue;	T;I"New York;	T;I"NY;	T;I"
+10022;	T;I"United States;	T;I"(212) 752-3615 ;	T;I"0;	T;I"0;	TU;{;I"	1681;	T;
+I"Otheroom, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1681;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1681&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1681&d=1&type=norm;	T;I"143 Perry St.;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 645-9758 ;	T;I"0;	T;I"0;	TU;{;I"	1682;	T;
+I"Peculier Pub, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1682;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1682&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1682&d=1&type=norm;	T;I"145 Bleeker Street;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"(212) 353-1327 ;	T;I"76.666783333334;	T;I"0;	TU;{;I"	1683;	T;
+I"$Petite Abeille - E. 20th Street;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1683;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1683&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1683&d=1&type=norm;	T;I"401 East 20th Street;	T;I"New York;	T;I"NY;	T;I"
+10010;	T;I"United States;	T;I"(212) 727-1505;	T;I"0;	T;I"0;	TU;{;I"	1684;	T;
+I"#Petite Abeille - Hudson Street;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1684;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1684&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1684&d=1&type=norm;	T;I"466 Hudson St.;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 741-6479 ;	T;I"0;	T;I"0;	TU;{;I"	1685;	T;
+I"!Petite Abeille - W. Broadway;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1685;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1685&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1685&d=1&type=norm;	T;I"134 West Broadway;	T;I"New York;	T;I"NY;	T;I"
+10013;	T;I"United States;	T;I"(212) 791-1360 ;	T;I"0;	T;I"0;	TU;{;I"	1686;	T;
+I"Puck Fair;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1686;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1686&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1686&d=1&type=norm;	T;I"298 Lafayette St.;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"(212) 431-1200 ;	T;I"0;	T;I"0;	TU;{;I"	1687;	T;
+I"Puffy's Tavern;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1687;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1687&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1687&d=1&type=norm;	T;I"81 Hudson Street;	T;I"New York;	T;I"NY;	T;I"
+10013;	T;I"United States;	T;I"(212) 766-9159 ;	T;I"0;	T;I"0;	TU;{;I"	1688;	T;
+I"Rolf's;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1688;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1688&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1688&d=1&type=norm;	T;I"281 3rd Avenue;	T;I"New York;	T;I"NY;	T;I"
+10010;	T;I"United States;	T;I"(212) 473-8718 ;	T;I"0;	T;I"0;	TU;{;I"	1690;	T;
+I"Slaughtered Lamb Pub, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1690;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1690&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1690&d=1&type=norm;	T;I"182 West 4th Street;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 627-LAMB;	T;I"0;	T;I"0;	TU;{;I"	1691;	T;
+I"Spanky's BBQ;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1691;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1691&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1691&d=1&type=norm;	T;I"127 West 43rd Street;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 575-5848;	T;I"0;	T;I"0;	TU;{;I"	1692;	T;
+I"Spotted Pig, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1692;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1692&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1692&d=1&type=norm;	T;I"314 West 11th St;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 620-0393;	T;I"51.6665;	T;I"0;	TU;{;I"	1693;	T;
+I"Spring Street Lounge;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1693;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1693&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1693&d=1&type=norm;	T;I"48 Spring Street;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"(212) 965-1774;	T;I"0;	T;I"0;	TU;{;I"	1694;	T;
+I"St. Andrews Pub;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1694;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1694&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1694&d=1&type=norm;	T;I"120 West 44th Street;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 840-8413 ;	T;I"0;	T;I"0;	TU;{;I"	1695;	T;
+I"St. Marks Ale House;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1695;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1695&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1695&d=1&type=norm;	T;I"2 St. Marks Place;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 260-9762 ;	T;I"81.6666;	T;I"0;	TU;{;I"	1696;	T;
+I"Standings;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1696;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1696&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1696&d=1&type=norm;	T;I"43 E. 7th St.;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 420-0671 ;	T;I"93.3332;	T;I"0;	TU;{;I"	1697;	T;
+I"Stout NYC;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1697;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1697&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1697&d=1&type=norm;	T;I"133 West 33 Street;	T;I"New York;	T;I"NY;	T;I"
+10001;	T;I"United States;	T;I"(212) 629-6191;	T;I"0;	T;I"0;	TU;{;I"	1698;	T;
+I"Swift Hibernian Lounge;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1698;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1698&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1698&d=1&type=norm;	T;I"/34 E. 4th St. Between Bowery And Lafayette;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 227-9438 ;	T;I"71.6667;	T;I"0;	TU;{;I"	1699;	T;
+I"
+Tabla;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1699;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1699&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1699&d=1&type=norm;	T;I"11 Madison Ave;	T;I"New York;	T;I"NY;	T;I"
+10010;	T;I"United States;	T;I"(212) 889-0667;	T;I"0;	T;I"0;	TU;{;I"	1700;	T;
+I"Telephone Bar and Grill;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1700;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1700&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1700&d=1&type=norm;	T;I"149 2nd Avenue;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 529-5000;	T;I"0;	T;I"0;	TU;{;I"	1701;	T;
+I"Tir Na Nog;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1701;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1701&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1701&d=1&type=norm;	T;I"5 Penn Plaza;	T;I"New York;	T;I"NY;	T;I"
+10001;	T;I"United States;	T;I"(212) 630-0249;	T;I"0;	T;I"0;	TU;{;I"	1702;	T;
+I"Tribeca Tavern;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1702;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1702&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1702&d=1&type=norm;	T;I"247 West Broadway;	T;I"New York;	T;I"NY;	T;I"
+10013;	T;I"United States;	T;I"(212) 941-7671 ;	T;I"56.66675;	T;I"0;	TU;{;I"	1704;	T;
+I"V Bar and Cafe;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1704;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1704&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1704&d=1&type=norm;	T;I"225 Sullivan Street;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"(212) 253-5740;	T;I"0;	T;I"0;	TU;{;I"	1705;	T;
+I"Virgil's Real Barbecue;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1705;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1705&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1705&d=1&type=norm;	T;I"152 W. 44th Street;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 921-9494 ;	T;I"0;	T;I"0;	TU;{;I"	1707;	T;
+I"#Waterfront Alehouse - New York;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1707;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1707&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1707&d=1&type=norm;	T;I"540 2nd Avenue;	T;I"New York;	T;I"NY;	T;I"
+10016;	T;I"United States;	T;I"(212) 696-4104 ;	T;I"0;	T;I"0;	TU;{;I"	1709;	T;
+I"White Horse Tavern;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1709;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1709&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1709&d=1&type=norm;	T;I"567 Hudson St.;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 243-9260;	T;I"0;	T;I"0;	TU;{;I"	1710;	T;
+I",Zum Schneider Restaurant and Biergarten;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/1710;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1710&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1710&d=1&type=norm;	T;I"107 Avenue C (at 7th St.);	T;I"New York;	T;I"NY;	T;I"
+10009;	T;I"United States;	T;I"(212) 598-1098;	T;I"0;	T;I"0;	TU;{;I"	1732;	T;
+I"Barzini's;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1732;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1732&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1732&d=1&type=norm;	T;I"2451 Broadway;	T;I"New York;	T;I"NY;	T;I"
+10024;	T;I"United States;	T;I"(212) 874-4992 ;	T;I"0;	T;I"0;	TU;{;I"	1733;	T;
+I"$Beer Warehouse / Flair Beverage;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1733;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1733&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1733&d=1&type=norm;	T;I"!3857 9th Avenue at 207th St.;	T;I"New York;	T;I"NY;	T;I"
+10034;	T;I"United States;	T;I"(212) 569-8713 ;	T;I"0;	T;I"0;	TU;{;I"	1734;	T;
+I"Bleecker Mini Mart;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1734;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1734&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1734&d=1&type=norm;	T;I"355 Bleecker St.;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 242-3271 ;	T;I"0;	T;I"0;	TU;{;I"	1735;	T;
+I"Dean And DeLuca;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1735;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1735&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1735&d=1&type=norm;	T;I"560 Broadway;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"(212) 226-6800 ;	T;I"0;	T;I"0;	TU;{;I"	1736;	T;
+I" Dowel Quality Products Inc.;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1736;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1736&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1736&d=1&type=norm;	T;I"91 First Ave.;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 979-6045 ;	T;I"0;	T;I"0;	TU;{;I"	1737;	T;
+I"Epicure World Foods;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1737;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1737&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1737&d=1&type=norm;	T;I"53 West 106 Street;	T;I"New York;	T;I"NY;	T;I"
+10025;	T;I"United States;	T;I"(212) 316-3499 ;	T;I"0;	T;I"0;	TU;{;I"	1738;	T;
+I"!Fairway Market - 12th Avenue;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1738;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1738&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1738&d=1&type=norm;	T;I"2328 12th Avenue;	T;I"New York;	T;I"NY;	T;I"
+10027;	T;I"United States;	T;I"(212) 234-3883;	T;I"0;	T;I"0;	TU;{;I"	1739;	T;
+I"Fairway Market - Broadway;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1739;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1739&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1739&d=1&type=norm;	T;I"2127 Broadway at 74 St.;	T;I"New York;	T;I"NY;	T;I"
+10023;	T;I"United States;	T;I"(212) 595-1888 ;	T;I"0;	T;I"0;	TU;{;I"	1740;	T;
+I"Fancy Grocery;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1740;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1740&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1740&d=1&type=norm;	T;I"27 1/2 Morton St;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 929-6546 ;	T;I"0;	T;I"0;	TU;{;I"	1741;	T;
+I"Flair Beverage;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1741;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1741&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1741&d=1&type=norm;	T;I"3857 Ninth Avenue;	T;I"New York;	T;I"NY;	T;I"
+10034;	T;I"United States;	T;0;I"0;	T;I"0;	TU;{;I"	1742;	T;
+I"Houston Village Farm Deli;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1742;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1742&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1742&d=1&type=norm;	T;I"61 1st Avenue;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 475-8048 ;	T;I"0;	T;I"0;	TU;{;I"	1743;	T;
+I"Milano Market;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1743;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1743&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1743&d=1&type=norm;	T;I"2892 Broadway;	T;I"New York;	T;I"NY;	T;I"
+10025;	T;I"United States;	T;I"(212) 665-9500 ;	T;I"0;	T;I"0;	TU;{;I"	1744;	T;
+I"+Morton Williams University Supermarket;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1744;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1744&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1744&d=1&type=norm;	T;I"2941 Broadway;	T;I"New York;	T;I"NY;	T;I"
+10025;	T;I"United States;	T;I"(212) 316-2349 ;	T;I"0;	T;I"0;	TU;{;I"	1745;	T;
+I"New Beer Distributors;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1745;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1745&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1745&d=1&type=norm;	T;I"167 Chrystie St.;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"(212) 473-8757 ;	T;I"64.166775;	T;I"0;	TU;{;I"	1746;	T;
+I"New York Beverage;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1746;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1746&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1746&d=1&type=norm;	T;I"207 East 123rd Street;	T;I"New York;	T;I"NY;	T;I"
+10027;	T;I"United States;	T;I"(212) 831-4000;	T;I"0;	T;I"0;	TU;{;I"	1747;	T;
+I"Pioneer Supermarket;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1747;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1747&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1747&d=1&type=norm;	T;I"289 Columbus Avenue;	T;I"New York;	T;I"NY;	T;I"
+10023;	T;I"United States;	T;I"212-874-9506 ;	T;I"58.3336;	T;I"0;	TU;{;I"	1748;	T;
+I"Westway Food;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1748;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1748&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1748&d=1&type=norm;	T;I"375 Amsterdam at 78 St.;	T;I"New York;	T;I"NY;	T;I"
+10024;	T;I"United States;	T;I"(212) 724-2322 ;	T;I"55;	T;I"0;	TU;{;I"	1749;	T;
+I"'Whole Foods Market - Hudson Street;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1749;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1749&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1749&d=1&type=norm;	T;I"250 Seventh Ave;	T;I"New York;	T;I"NY;	T;I"
+10001;	T;I"United States;	T;I"(212) 924-5969;	T;I"0;	T;I"0;	TU;{;I"	1750;	T;
+I"&Whole Foods Market - Union Square;	T;I"Beer Store;	T;I"*https://beermapping.com/location/1750;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=1750&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=1750&d=1&type=norm;	T;I"4 Union Square South;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 673-5388;	T;I"0;	T;I"0;	TU;{;I"	2935;	T;
+I"Ulysses;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/2935;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=2935&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=2935&d=1&type=norm;	T;I"58 Stone Street;	T;I"New York;	T;I"NY;	T;I"
+10004;	T;I"United States;	T;I"(212) 482-0400;	T;I"89.99995;	T;I"0;	TU;{;I"	2936;	T;
+I"Pinch Bar and Grille, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/2936;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=2936&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=2936&d=1&type=norm;	T;I"237 Sullivan Street;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"212-982-5222;	T;I"0;	T;I"0;	TU;{;I"	2937;	T;
+I"Kevin St. James;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/2937;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=2937&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=2937&d=1&type=norm;	T;I"741 8th Avenue;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"212-977-5984;	T;I"0;	T;I"0;	TU;{;I"	3060;	T;
+I"Boxers;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/3060;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=3060&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=3060&d=1&type=norm;	T;I"190 West 4th Street;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;I"(212) 206-7526;	T;I"0;	T;I"0;	TU;{;I"	3346;	T;
+I"Blind Tiger Ale House;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/3346;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=3346&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=3346&d=1&type=norm;	T;I"281 Bleecker Street;	T;I"New York;	T;I"NY;	T;I"
+10014;	T;I"United States;	T;0;I"88.333375;	T;I"0;	TU;{;I"	3602;	T;
+I"Gaf, The;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/3602;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=3602&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=3602&d=1&type=norm;	T;I"1715 1st Ave;	T;I"New York;	T;I"NY;	T;I"
+10128;	T;I"United States;	T;I"2129963278  ;	T;I"0;	T;I"0;	TU;{;I"	3773;	T;
+I"Gaf West;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/3773;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=3773&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=3773&d=1&type=norm;	T;I"401 W 48th St;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 307-7536;	T;I"0;	T;I"0;	TU;{;I"	3960;	T;
+I"Against The Grain;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/3960;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=3960&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=3960&d=1&type=norm;	T;I"620 E. 6th St ;	T;I"New York;	T;I"NY;	T;I"
+10009;	T;I"United States;	T;I"212-358-7065;	T;I"0;	T;I"0;	TU;{;I"	6336;	T;
+I"Pound and Pence;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/6336;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=6336&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=6336&d=1&type=norm;	T;I"55 Liberty Street;	T;I"New York;	T;I"NY;	T;I"
+10005;	T;I"United States;	T;I"212-716-1140;	T;I"0;	T;I"0;	TU;{;I"	6465;	T;
+I"*Whole Foods Market - Bowery Beer Room;	T;I"Beer Store;	T;I"*https://beermapping.com/location/6465;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=6465&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=6465&d=1&type=norm;	T;I"95 East Houston Street;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"212.420.1320;	T;I"93.3334;	T;I"0;	TU;{;I"	7101;	T;
+I"Carriage House;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/7101;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=7101&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=7101&d=1&type=norm;	T;I"219 E 59th St;	T;I"New York;	T;I"NY;	T;I"
+10022;	T;I"United States;	T;I"(212) 838-9464;	T;I"0;	T;I"0;	TU;{;I"	9652;	T;
+I"Professor Thom's;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/9652;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=9652&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=9652&d=1&type=norm;	T;I"219 2nd Avenue;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 260-9480;	T;I"0;	T;I"0;	TU;{;I"	9646;	T;
+I"
+Resto;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/9646;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=9646&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=9646&d=1&type=norm;	T;I"111 E 29th St;	T;I"New York;	T;I"NY;	T;I"
+10016;	T;I"United States;	T;I"(212) 685-5585;	T;I"0;	T;I"0;	TU;{;I"	9653;	T;
+I"Borough Food and Drink;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/9653;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=9653&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=9653&d=1&type=norm;	T;I"12 E. 22nd St;	T;I"New York;	T;I"NY;	T;I"
+10010;	T;I"United States;	T;I"(212) 260-0103;	T;I"0;	T;I"0;	TU;{;I"	9654;	T;
+I"
+Toast;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/9654;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=9654&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=9654&d=1&type=norm;	T;I"3157 Broadway;	T;I"New York;	T;I"NY;	T;I"
+10027;	T;I"United States;	T;I"(212) 662-1144;	T;I"0;	T;I"0;	TU;{;I"	9639;	T;
+I"Rattle 'N' Hum;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/9639;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=9639&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=9639&d=1&type=norm;	T;I"14 E 33rd St;	T;I"New York;	T;I"NY;	T;I"
+10016;	T;I"United States;	T;I"(212) 481-1586;	T;I"0;	T;I"0;	TU;{;I"	9655;	T;
+I"Valhalla;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/9655;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=9655&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=9655&d=1&type=norm;	T;I"815 9th Avenue;	T;I"New York;	T;I"NY;	T;I"
+10019;	T;I"United States;	T;I"(212) 757-2747;	T;I"86.66665;	T;I"0;	TU;{;I"	9810;	T;
+I"East Village Tavern;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/9810;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=9810&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=9810&d=1&type=norm;	T;I"158 Avenue C;	T;I"New York;	T;I"NY;	T;I"
+10009;	T;I"United States;	T;I"(212) 253-8400;	T;I"86.6667;	T;I"0;	TU;{;I"	9999;	T;
+I"Dive Bar;	T;I"Beer Bar;	T;I"*https://beermapping.com/location/9999;	T;I"=http://beermapping.com/maps/proxymaps.php?locid=9999&d=5;	T;I"Ghttp://beermapping.com/maps/blogproxy.php?locid=9999&d=1&type=norm;	T;I"732 Amsterdam Ave;	T;I"New York;	T;I"NY;	T;I"
+10025;	T;I"United States;	T;I"(212) 749-4358;	T;I"0;	T;I"0;	TU;{;I"
+10000;	T;
+I"Broadway Dive;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/10000;	T;I">http://beermapping.com/maps/proxymaps.php?locid=10000&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=10000&d=1&type=norm;	T;I"2662 Broadway;	T;I"New York;	T;I"NY;	T;I"
+10025;	T;I"United States;	T;I"(212) 865-2662;	T;I"0;	T;I"0;	TU;{;I"
+10435;	T;
+I"Spitzer's Corner;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/10435;	T;I">http://beermapping.com/maps/proxymaps.php?locid=10435&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=10435&d=1&type=norm;	T;I"101 Rivington St;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"(212) 228-0027;	T;I"0;	T;I"0;	TU;{;I"
+11622;	T;
+I"Pony Bar, The;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/11622;	T;I">http://beermapping.com/maps/proxymaps.php?locid=11622&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=11622&d=1&type=norm;	T;I"637 10th Ave;	T;I"New York;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(212) 586-2707;	T;I"0;	T;I"0;	TU;{;I"
+11391;	T;
+I"Amity Hall;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/11391;	T;I">http://beermapping.com/maps/proxymaps.php?locid=11391&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=11391&d=1&type=norm;	T;I"80 West Third St.;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"(212) 677-2290;	T;I"76.66665;	T;I"0;	TU;{;I"
+11992;	T;
+I"Stags Head, The;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/11992;	T;I">http://beermapping.com/maps/proxymaps.php?locid=11992&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=11992&d=1&type=norm;	T;I"252 East 51st Street;	T;I"New York;	T;I"NY;	T;I"
+10022;	T;I"United States;	T;I"(212) 888-2453;	T;I"0;	T;I"0;	TU;{;I"
+12803;	T;
+I"Nice Matin;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/12803;	T;I">http://beermapping.com/maps/proxymaps.php?locid=12803&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=12803&d=1&type=norm;	T;I"201 West 79th St.;	T;I"New York;	T;I"NY;	T;I"
+10024;	T;I"United States;	T;I"(212) 873-6423;	T;I"0;	T;I"0;	TU;{;I"
+14246;	T;
+I"Taproom 307;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/14246;	T;I">http://beermapping.com/maps/proxymaps.php?locid=14246&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=14246&d=1&type=norm;	T;I"307 3rd Ave;	T;I"New York;	T;I"NY;	T;I"
+10010;	T;I"United States;	T;I"(212) 725-4766;	T;I"71.6667;	T;I"0;	TU;{;I"
+14268;	T;
+I"DBGB Kitchen and Bar;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/14268;	T;I">http://beermapping.com/maps/proxymaps.php?locid=14268&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=14268&d=1&type=norm;	T;I"399 Bowery;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 933-5300;	T;I"0;	T;I"0;	TU;{;I"
+14695;	T;
+I"Euro Market;	T;I"Beer Store;	T;I"+https://beermapping.com/location/14695;	T;I">http://beermapping.com/maps/proxymaps.php?locid=14695&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=14695&d=1&type=norm;	T;I"3042 31st Street;	T;I"New York;	T;I"NY;	T;I"
+11103;	T;I"United States;	T;I"(718) 545-5569;	T;I"0;	T;I"0;	TU;{;I"
+14924;	T;
+I"Earl's Beer and Cheese;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/14924;	T;I">http://beermapping.com/maps/proxymaps.php?locid=14924&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=14924&d=1&type=norm;	T;I"Park Avenue;	T;I"New York;	T;I"NY;	T;I"
+10029;	T;I"United States;	T;I"(212) 289-1581;	T;I"0;	T;I"0;	TU;{;I"
+14925;	T;
+I"City Swiggers;	T;I"Beer Store;	T;I"+https://beermapping.com/location/14925;	T;I">http://beermapping.com/maps/proxymaps.php?locid=14925&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=14925&d=1&type=norm;	T;I"320 E. 86th St.;	T;I"New York;	T;I"NY;	T;I"
+10028;	T;I"United States;	T;I"(212) 570-2000;	T;I"0;	T;I"0;	TU;{;I"
+14926;	T;
+I"Bier International;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/14926;	T;I">http://beermapping.com/maps/proxymaps.php?locid=14926&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=14926&d=1&type=norm;	T;I"!2099 Frederick Douglass Blvd;	T;I"New York;	T;I"NY;	T;I"
+10026;	T;I"United States;	T;I"(212) 280-0944.;	T;I"0;	T;I"0;	TU;{;I"
+15210;	T;
+I"GMT Tavern;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/15210;	T;I">http://beermapping.com/maps/proxymaps.php?locid=15210&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=15210&d=1&type=norm;	T;I"142 Bleecker St;	T;I"New York;	T;I"NY;	T;I"
+10012;	T;I"United States;	T;I"(646) 863-3776;	T;I"0;	T;I"0;	TU;{;I"
+15338;	T;
+I"Little Town NYC;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/15338;	T;I">http://beermapping.com/maps/proxymaps.php?locid=15338&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=15338&d=1&type=norm;	T;I"118 East 15th Street;	T;I"New York;	T;I"NY;	T;I"
+10003;	T;I"United States;	T;I"(212) 677-6300;	T;I"0;	T;I"0;	TU;{;I"
+15466;	T;
+I"%Heartland Brewery - Times Square;	T;I"Brewpub;	T;I"+https://beermapping.com/location/15466;	T;I">http://beermapping.com/maps/proxymaps.php?locid=15466&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=15466&d=1&type=norm;	T;I"127 W. 43rd St.;	T;I"New York City;	T;I"NY;	T;I"
+10036;	T;I"United States;	T;I"(646) 366-0235;	T;I"0;	T;I"0;	TU;{;I"
+15467;	T;
+I"%Heartland Brewery - Midtown West;	T;I"Brewpub;	T;I"+https://beermapping.com/location/15467;	T;I">http://beermapping.com/maps/proxymaps.php?locid=15467&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=15467&d=1&type=norm;	T;I"625 8th Ave. at 41st St.;	T;I"New York City;	T;I"NY;	T;I"
+10019;	T;I"United States;	T;I"(646) 214-1000;	T;I"73.3331;	T;I"0;	TU;{;I"
+15468;	T;
+I" Heartland Brewery - Seaport;	T;I"Brewpub;	T;I"+https://beermapping.com/location/15468;	T;I">http://beermapping.com/maps/proxymaps.php?locid=15468&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=15468&d=1&type=norm;	T;I"93 South st.;	T;I"New York City;	T;I"NY;	T;I"
+10038;	T;I"United States;	T;I"(646) 572-2337;	T;I"0;	T;I"0;	TU;{;I"
+15554;	T;
+I"Birreria;	T;I"Brewpub;	T;I"+https://beermapping.com/location/15554;	T;I">http://beermapping.com/maps/proxymaps.php?locid=15554&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=15554&d=1&type=norm;	T;I"200 5th Avenue;	T;I"New York;	T;I"NY;	T;I"
+10010;	T;I"United States;	T;I"(212) 937-8910;	T;I"0;	T;I"0;	TU;{;I"
+15555;	T;
+I"Bronx Brewery;	T;I"Brewery;	T;I"+https://beermapping.com/location/15555;	T;I">http://beermapping.com/maps/proxymaps.php?locid=15555&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=15555&d=1&type=norm;	T;I"856 E 136th St;	T;I"New York;	T;I"NY;	T;I"
+10454;	T;I"United States;	T;I"(718) 402-1000;	T;I"80.8333;	T;I"0;	TU;{;I"
+15931;	T;
+I"Beer Authority;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/15931;	T;I">http://beermapping.com/maps/proxymaps.php?locid=15931&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=15931&d=1&type=norm;	T;I"300 West 40th Street;	T;I"New York;	T;I"NY;	T;I"
+10018;	T;I"United States;	T;I"(212) 510-8415;	T;I"0;	T;I"0;	TU;{;I"
+16529;	T;
+I"Top Hops;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/16529;	T;I">http://beermapping.com/maps/proxymaps.php?locid=16529&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=16529&d=1&type=norm;	T;I"94 Orchard Street;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"(212) 254-4677;	T;I"0;	T;I"0;	TU;{;I"
+18096;	T;
+I"One Mile House;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/18096;	T;I">http://beermapping.com/maps/proxymaps.php?locid=18096&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=18096&d=1&type=norm;	T;I"10 Delancey Street;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"646-559-0702;	T;I"0;	T;I"0;	TU;{;I"
+18172;	T;
+I"Clinton Hall;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/18172;	T;I">http://beermapping.com/maps/proxymaps.php?locid=18172&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=18172&d=1&type=norm;	T;I"90 Washington;	T;I"New York;	T;I"NY;	T;I"
+10006;	T;I"United States;	T;I"(212) 363-6000;	T;I"0;	T;I"0;	TU;{;I"
+18259;	T;
+I"Chelsea Pub, The;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/18259;	T;I">http://beermapping.com/maps/proxymaps.php?locid=18259&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=18259&d=1&type=norm;	T;I"362 West 23rd St;	T;I"New York;	T;I"NY;	T;I"
+10011;	T;I"United States;	T;I"(646) 998-5831;	T;I"0;	T;I"0;	TU;{;I"
+18538;	T;
+I"ABC Beer Company;	T;I"Brewpub;	T;I"+https://beermapping.com/location/18538;	T;I">http://beermapping.com/maps/proxymaps.php?locid=18538&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=18538&d=1&type=norm;	T;I"96 Avenue C;	T;I"New York City;	T;I"NY;	T;I"
+10009;	T;I"United States;	T;I"(646) 422-7103;	T;I"86.66665;	T;I"0;	TU;{;I"
+18539;	T;
+I")Paulaner NYC Brauhaus and Restaurant;	T;I"Brewpub;	T;I"+https://beermapping.com/location/18539;	T;I">http://beermapping.com/maps/proxymaps.php?locid=18539&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=18539&d=1&type=norm;	T;I"265 Bowery;	T;I"New York;	T;I"NY;	T;I"
+10002;	T;I"United States;	T;I"(212) 780-0300;	T;I"0;	T;I"0;	TU;{;I"
+19062;	T;
+I"Inwood Local;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/19062;	T;I">http://beermapping.com/maps/proxymaps.php?locid=19062&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=19062&d=1&type=norm;	T;I"4957 Broadway;	T;I"New York;	T;I"NY;	T;I"
+10034;	T;I"United States;	T;I"212-544-8900;	T;I"0;	T;I"0;	TU;{;I"
+19185;	T;
+I"Jasper Tap House;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/19185;	T;I">http://beermapping.com/maps/proxymaps.php?locid=19185&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=19185&d=1&type=norm;	T;I"761 9th Ave;	T;I"New York;	T;I"NY;	T;I"
+10018;	T;I"United States;	T;I"(212) 957-1000;	T;I"0;	T;I"0;	TU;{;I"
+19187;	T;
+I"Three Monkeys, The;	T;I"Beer Bar;	T;I"+https://beermapping.com/location/19187;	T;I">http://beermapping.com/maps/proxymaps.php?locid=19187&d=5;	T;I"Hhttp://beermapping.com/maps/blogproxy.php?locid=19187&d=1&type=norm;	T;I"236 West 54 Street;	T;I"New York;	T;I"NY;	T;I"
+10019;	T;I"United States;	T;I"212-586 2080;	T;I"0;	T;I"0;	T:@created_atf1487141614.6396532:@expires_in0

@@ -1,6 +1,4 @@
 class BeerClub < ApplicationRecord
   has_many :memberships
   has_many :users, through: :memberships
-
-  validates :user, uniqueness: true
 end

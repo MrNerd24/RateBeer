@@ -16,53 +16,31 @@ class User < ApplicationRecord
     ratings.order(score: :desc).limit(1).first.beer
   end
 
-  def favorite_style
-    styles = Beer.select(:style).distinct.to_a.map() { |beer| beer.style}
-    bestStyle = nil
-    bestAverage = 0
-    styles.each do |style|
-      scores = 0
-      count = 0
-      self.ratings.each do |rating|
-        if rating.beer.style == style
-          scores += rating.score
-          count += 1
-        end
-      end
-      if not (scores == 0 && count == 0)
-        average = scores/count
-        if bestAverage < average
-          bestAverage = average
-          bestStyle = style
-        end
-      end
+  def favorite_brewery
+    return nil if ratings.empty?
 
+    ratings_of_breweries = ratings.group_by { |r| r.beer.brewery }
+    averages_of_breweries = []
+    ratings_of_breweries.each do |brewery, ratings|
+      averages_of_breweries << {
+          brewery: brewery,
+          rating: ratings.map(&:score).sum / ratings.count.to_f
+      }
     end
-    return bestStyle
+    averages_of_breweries.sort_by { |b| -b[:rating] }.first[:brewery]
   end
 
-  def favorite_brewery
-    brewerys = Brewery.all
-    bestbrewery = nil
-    bestAverage = 0
-    brewerys.each do |brewery|
-      scores = 0
-      count = 0
-      self.ratings.each do |rating|
-        if rating.beer.brewery == brewery
-          scores += rating.score
-          count += 1
-        end
-      end
-      if not (scores == 0 && count == 0)
-        average = scores/count
-        if bestAverage < average
-          bestAverage = average
-          bestbrewery = brewery
-        end
-      end
+  def favorite_style
+    return nil if ratings.empty?
 
+    ratings_of_styles = ratings.group_by { |r| r.beer.style }
+    averages_of_styles = []
+    ratings_of_styles.each do |style, ratings|
+      averages_of_styles << {
+          style: style,
+          rating: ratings.map(&:score).sum / ratings.count.to_f
+      }
     end
-    return bestbrewery
+    averages_of_styles.sort_by { |b| -b[:rating] }.first[:style]
   end
 end

@@ -1,5 +1,5 @@
 class MembershipsController < ApplicationController
-  before_action :set_membership, only: [:show, :edit, :update, :destroy]
+  before_action :set_membership, only: [:show, :edit, :update]
 
   # GET /memberships
   # GET /memberships.json
@@ -31,9 +31,16 @@ class MembershipsController < ApplicationController
   def create
     @membership = Membership.new(membership_params)
 
-    if current_user.beer_clubs.include?(BeerClub.find_by(id:params[:beer_club_id]))
+    if current_user.nil?
+      redirect_to login_path
+    else
+      @membership.user = current_user
+    end
+
+    if current_user.beer_clubs.include?(BeerClub.find_by(id: params[:beer_club_id]))
       redirect_to @membership.beer_club
     end
+
 
     respond_to do |format|
       if @membership.save
@@ -63,21 +70,24 @@ class MembershipsController < ApplicationController
   # DELETE /memberships/1
   # DELETE /memberships/1.json
   def destroy
+
+    @membership = current_user.memberships.find_by(beer_club_id:params[:membership][:beer_club_id])
+
     @membership.destroy
     respond_to do |format|
-      format.html { redirect_to memberships_url, notice: 'Membership was successfully destroyed.' }
+      format.html { redirect_to beer_club_path(params[:membership][:beer_club_id]), notice: 'Membership was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_membership
-      @membership = Membership.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_membership
+    @membership = Membership.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def membership_params
-      params.require(:membership).permit(:user_id, :beer_club_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def membership_params
+    params.require(:membership).permit(:beer_club_id)
+  end
 end

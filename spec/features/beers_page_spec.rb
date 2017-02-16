@@ -7,6 +7,7 @@ describe "When beer is created" do
   before :each do
     FactoryGirl.create :user, username:"Pekka"
     sign_in(username:"Pekka", password:"Foobar1")
+    FactoryGirl.create :style
   end
 
   let!(:brewery) {FactoryGirl.create :brewery}

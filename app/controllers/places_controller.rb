@@ -1,5 +1,6 @@
 class PlacesController < ApplicationController
 
+
   def index
     if params[:city].nil? || params[:city] == ""
       render :index

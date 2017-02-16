@@ -49,8 +49,13 @@ FactoryGirl.define do
 
   factory :beer do
     name { generate(:beerName) }
-    style "Caffeinated"
+    style
     brewery
+  end
+
+  factory :style do
+    name "Caffeinated"
+    description "Has coffee in it, eww..."
   end
 
 end

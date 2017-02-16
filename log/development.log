@@ -19100,3 +19100,721 @@ Processing by StylesController#index as HTML
 Completed 200 OK in 97ms (Views: 83.4ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveOldStyleFromBeer (20170216084140)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abeers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "old_style" varchar, "brewery_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "style_id" integer)[0m
+  [1m[35m (0.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_style_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_style_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE  INDEX "tindex_abeers_on_style_id" ON "abeers" ("style_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "abeers" ("id","name","old_style","brewery_id","created_at","updated_at","style_id")
+                     SELECT "id","name","old_style","brewery_id","created_at","updated_at","style_id" FROM "beers"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "beers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "brewery_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "style_id" integer)[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_abeers_on_style_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_abeers_on_style_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE  INDEX "index_beers_on_style_id" ON "beers" ("style_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "beers" ("id","name","brewery_id","created_at","updated_at","style_id")
+                     SELECT "id","name","brewery_id","created_at","updated_at","style_id" FROM "abeers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "abeers"[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170216084140"]]
+  [1m[35m (17.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_style_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_style_id' AND type='index'
+[0m
+Started GET "/styles/1" for 127.0.0.1 at 2017-02-16 10:46:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StylesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStyle Load (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering styles/show.html.erb within layouts/application
+  [1m[36mBeer Load (0.0ms)[0m  [1m[34mSELECT "beers".* FROM "beers" WHERE "beers"."style_id" = ?[0m  [["style_id", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.5ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered styles/show.html.erb within layouts/application (81.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 582ms (Views: 522.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/beers/3" for 127.0.0.1 at 2017-02-16 10:47:11 +0200
+Processing by BeersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBeer Load (0.5ms)[0m  [1m[34mSELECT  "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering beers/show.html.erb within layouts/application
+  [1m[36mStyle Load (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRating Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "ratings" WHERE "ratings"."beer_id" = ? LIMIT ?[0m  [["beer_id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "ratings" WHERE "ratings"."beer_id" = ?[0m  [["beer_id", 3]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."score") FROM "ratings" WHERE "ratings"."beer_id" = ?[0m  [["beer_id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered beers/show.html.erb within layouts/application (67.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 178ms (Views: 152.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2017-02-16 10:47:16 +0200
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  [1m[36mBeer Load (0.5ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  [1m[36mStyle Load (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStyle Load (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStyle Load (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStyle Load (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStyle Load (0.5ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mStyle Load (0.5ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered beers/index.html.erb within layouts/application (36.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 158ms (Views: 141.0ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_style_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_style_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-02-16 11:00:11 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "breweries"[0m
+  [1m[36mBrewery Load (0.0ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (24.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 711ms (Views: 645.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/beers/new" for 127.0.0.1 at 2017-02-16 11:00:24 +0200
+Processing by BeersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering beers/new.html.erb within layouts/application
+  [1m[36mStyle Load (0.0ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  [1m[36mBrewery Load (0.5ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  Rendered beers/_form.html.erb (69.6ms)
+  Rendered beers/new.html.erb within layouts/application (93.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 239ms (Views: 195.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2017-02-16 11:00:28 +0200
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2017-02-16 11:00:31 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vUht5a+q94gZ4SIt6PHFwCGXDnT29ZfgtPXUOmW7Aq+8TXnJUjgVwFU2nYP+Duwm+iuXGllXRqcVv8ydstv3Lg==", "city"=>"helsinki", "commit"=>"Search"}
+Redirected to http://localhost:3000/places/helsinki
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/helsinki" for 127.0.0.1 at 2017-02-16 11:00:31 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"city"=>"helsinki"}
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 107ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/places" for 127.0.0.1 at 2017-02-16 11:13:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+TypeError - no implicit conversion of Class into String:
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  app/controllers/places_controller.rb:3:in `<class:PlacesController>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.1) lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:203:in `const_missing'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `each'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `inject'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:583:in `get'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:614:in `constantize'
+  actionpack (5.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/bb995b606847e105/variables" for 127.0.0.1 at 2017-02-16 11:13:52 +0200
+Started POST "/__better_errors/bb995b606847e105/variables" for 127.0.0.1 at 2017-02-16 11:14:09 +0200
+Started GET "/places" for 127.0.0.1 at 2017-02-16 11:14:32 +0200
+
+LoadError - cannot load such file -- BeermappingApi:
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  app/controllers/places_controller.rb:3:in `<class:PlacesController>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.1) lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:203:in `const_missing'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `each'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `inject'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:583:in `get'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:614:in `constantize'
+  actionpack (5.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/6d0c8a529395346f/variables" for 127.0.0.1 at 2017-02-16 11:14:32 +0200
+Started GET "/places" for 127.0.0.1 at 2017-02-16 11:14:52 +0200
+
+LoadError - cannot load such file -- lib/BeermappingApi.rb:
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  app/controllers/places_controller.rb:3:in `<class:PlacesController>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.1) lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:203:in `const_missing'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `each'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `inject'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:583:in `get'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:614:in `constantize'
+  actionpack (5.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/81e493303d5048da/variables" for 127.0.0.1 at 2017-02-16 11:14:52 +0200
+Started GET "/places" for 127.0.0.1 at 2017-02-16 11:15:02 +0200
+
+LoadError - cannot load such file -- lib/beermappingApi.rb:
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  app/controllers/places_controller.rb:3:in `<class:PlacesController>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.1) lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:203:in `const_missing'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `each'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `inject'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:583:in `get'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:614:in `constantize'
+  actionpack (5.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/0ee5c1a14c1bbac3/variables" for 127.0.0.1 at 2017-02-16 11:15:02 +0200
+Started GET "/places" for 127.0.0.1 at 2017-02-16 11:15:15 +0200
+
+LoadError - cannot load such file -- beermappingApi:
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  app/controllers/places_controller.rb:3:in `<class:PlacesController>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.1) lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:203:in `const_missing'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `each'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `inject'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:583:in `get'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:614:in `constantize'
+  actionpack (5.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/ea01731c1788390e/variables" for 127.0.0.1 at 2017-02-16 11:15:15 +0200
+Started GET "/places" for 127.0.0.1 at 2017-02-16 11:20:02 +0200
+
+LoadError - cannot load such file -- C:/Users/juuso_j0pbwen/RubymineProjects/RateBeer/lib/beermappingApi:
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `block in load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:257:in `load_dependency'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:293:in `require'
+  app/controllers/places_controller.rb:3:in `<class:PlacesController>'
+  app/controllers/places_controller.rb:1:in `<top (required)>'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:477:in `block in load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:662:in `new_constants_in'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:476:in `load_file'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:375:in `block in require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `block in load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+  activesupport (5.0.1) lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+  activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:11:in `loading'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:37:in `load_interlock'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:358:in `require_or_load'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:203:in `const_missing'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `const_get'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `each'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `inject'
+  activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:583:in `get'
+  activesupport (5.0.1) lib/active_support/dependencies.rb:614:in `constantize'
+  actionpack (5.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+  actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+  actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+  rack (2.0.1) lib/rack/etag.rb:25:in `call'
+  rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.1) lib/rack/head.rb:12:in `call'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+  rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.1) lib/rails/engine.rb:522:in `call'
+  puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+  puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+  puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/e33011aecb3689f5/variables" for 127.0.0.1 at 2017-02-16 11:20:02 +0200
+Started GET "/places" for 127.0.0.1 at 2017-02-16 11:20:27 +0200
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (9.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 345ms (Views: 329.1ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/places" for 127.0.0.1 at 2017-02-16 11:20:44 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E2YcueUHyALmaferLWXZ7yaohPz/JHU4lEjgWT/Gym1qfuXgRnBvVCTUxMicMinGoHp+AV0xSlCGfioeRQRj/w==", "city"=>"helsinki", "commit"=>"Search"}
+Redirected to http://localhost:3000/places/helsinki
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/places/helsinki" for 127.0.0.1 at 2017-02-16 11:20:44 +0200
+Processing by PlacesController#index as HTML
+  Parameters: {"city"=>"helsinki"}
+  Rendering places/index.html.erb within layouts/application
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 88ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+

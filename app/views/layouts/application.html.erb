@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RateBeer</title>
-  <%= csrf_meta_tags %>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Rate Beer" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rate Beer" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+  <header>
+    <%= render 'layouts/navigation' %>
+  </header>
 
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+  <main role="main" class=".container">
+    <%= render 'layouts/messages' %>
 
-<body>
-<nav id="navibar">
-  <%= link_to "Breweries", breweries_path %>
-  <%= link_to "Beers", beers_path %>
-  <%= link_to "Places", places_path %>
-  <%= link_to "Ratings", ratings_path %>
-  <%= link_to "Users", users_path %>
-  <%= link_to "Clubs", beer_clubs_path %>
-  <% if current_user %>
-      <%= link_to current_user.username, user_path(current_user) %>
-      <%= link_to "Rate a beer", new_rating_path %>
-      <%= link_to "Signout", session_path, method: :delete%>
-  <% else %>
-      <%= link_to "Signin", new_session_path %>
-      <%= link_to "Signup", new_user_path %>
-  <% end %>
-</nav>
+    <div class="row">
+      <div class="col-md-8">
+        <%= yield %>
+      </div>
+      <div class="col-md-4">
+        <img src="http://www.cs.helsinki.fi/u/mluukkai/wadror/pint.jpg" width="200">
+      </div>
+    </div>
 
-<div id="yieldWrapper">
-  <%= yield %>
-</div>
-
-</body>
+  </main>
+  </body>
 </html>

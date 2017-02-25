@@ -15,13 +15,12 @@ class RatingsController < ApplicationController
       redirect_to signin_path, notice: 'you should be signed in'
     else
       @rating.user_id = current_user.id
-    end
-    if @rating.save
-      current_user.ratings << @rating
-      redirect_to user_path current_user
-    else
-      @beers = Beer.all
-      render :new
+      if @rating.save
+        current_user.ratings << @rating
+        redirect_to user_path current_user
+      else
+        redirect_to beers_path
+      end
     end
   end
 

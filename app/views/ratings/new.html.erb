@@ -14,10 +14,20 @@
         </div>
     <% end %>
 
-    beer: <%= f.select :beer_id, options_from_collection_for_select(@beers, :id, :to_s, selected: @rating.beer_id) %>
-    score: <%= f.number_field :score %>
+    <div class="field">
+      beer: <%= f.select :beer_id, options_from_collection_for_select(@beers, :id, :to_s, selected: @rating.beer_id) %>
+    </div>
+
+    <div class="field">
+      score: <%= f.number_field :score %>
+    </div>
+
+
     <% if current_user %>
         <%= f.hidden_field :user_id, value: current_user.id %>
     <% end %>
-    <%= f.submit %>
+    <div class="field">
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+
 <% end %>

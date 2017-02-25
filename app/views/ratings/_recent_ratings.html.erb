@@ -1,0 +1,19 @@
+<% newRatings = Rating.all.sort { |a, b| a.created_at <=> b.created_at } %>
+
+<table class="table table-hover">
+  <tr>
+    <th>Beer</th>
+    <th>Rating</th>
+    <th>User</th>
+  </tr>
+
+  <% newRatings[0..4].each do |r| %>
+      <tr>
+        <td><%= link_to r.beer.name, r.beer %></td>
+        <td><%= r.score %></td>
+        <td><%= link_to r.user.username, r.user %></td>
+      </tr>
+  <% end %>
+
+
+</table>

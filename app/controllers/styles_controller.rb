@@ -54,6 +54,7 @@ class StylesController < ApplicationController
   # DELETE /styles/1
   # DELETE /styles/1.json
   def destroy
+    ensure_that_signed_in_as_admin
     @style.destroy
     respond_to do |format|
       format.html { redirect_to styles_url, notice: 'Style was successfully destroyed.' }

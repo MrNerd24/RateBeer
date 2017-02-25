@@ -2,34 +2,19 @@ class PlacesController < ApplicationController
 
 
   def index
-    if params[:city].nil? || params[:city] == ""
-      render :index
-    else
-      @places = BeermappingApi.places_in(params[:city])
-      if @places.empty?
-        redirect_to places_path, notice: "No locations in #{params[:city]}"
-      else
-        render :index
-      end
-    end
   end
 
   def show
-    @place = BeermappingApi.places_in(params[:city]).find { |b| b.name == params[:name] }
-    if @place.nil?
-      redirect_to places_path
-    end
+    @place = BeermappingApi.place_in(session['last_city'], params[:id])
   end
 
-
   def search
-    redirect_to city_places_path(params[:city])
+    city = params[:city]
+    @places = BeermappingApi.places_in(city)
+    # @weather = WeatherService.weather_for(city)
+    session['last_city'] = city
 
-    # if @places.empty?
-    #   redirect_to places_path, notice: "No locations in #{params[:city]}"
-    # else
-    #   render :index
-    # end
+    render :index
   end
 
 

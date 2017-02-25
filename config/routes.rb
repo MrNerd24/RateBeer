@@ -20,10 +20,15 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   delete 'signout', to: 'sessions#destroy'
 
-  # resources :places, only: [:index, :show]
-  get 'places', to: 'places#index'
-  get 'places/:city', to: 'places#index', as: "city_places"
-  get 'places/:city/:name', to: 'places#show', as: "show_places"
+  resources :places, only:[:index, :show]
   post 'places', to:'places#search'
+
+  resources :breweries do
+    post 'toggle_activity', on: :member
+  end
+
+  resources :users do
+    post 'toggle_block', on: :member
+  end
 
 end

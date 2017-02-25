@@ -86,21 +86,25 @@ RSpec.describe User, type: :model do
     end
 
     it 'should be the only rated if only one rated' do
-      beer = FactoryGirl.create(:beer, style:"Lager")
+      style = FactoryGirl.create :style, name:"Lager"
+      beer = FactoryGirl.create(:beer, style:style)
       rating = FactoryGirl.create(:rating, user:user, beer:beer, score:30)
-      expect(user.favorite_style).to eq("Lager")
+      expect(user.favorite_style.name).to eq("Lager")
     end
 
     it 'should be on average the most rated style' do
-      beer = FactoryGirl.create(:beer, style:"Lager")
-      beer2 = FactoryGirl.create(:beer, style:"Lager")
-      beer3 = FactoryGirl.create(:beer, style:"Pale ale")
-      beer4 = FactoryGirl.create(:beer, style:"Weizen")
+      style = FactoryGirl.create :style, name:"Lager"
+      style2 = FactoryGirl.create :style, name:"Pale ale"
+      style3 = FactoryGirl.create :style, name:"Weizen"
+      beer = FactoryGirl.create(:beer, style:style)
+      beer2 = FactoryGirl.create(:beer, style:style)
+      beer3 = FactoryGirl.create(:beer, style:style2)
+      beer4 = FactoryGirl.create(:beer, style:style3)
       rating = FactoryGirl.create(:rating, user:user, beer:beer, score:15)
       rating = FactoryGirl.create(:rating, user:user, beer:beer2, score:20)
       rating = FactoryGirl.create(:rating, user:user, beer:beer3, score:30)
       rating = FactoryGirl.create(:rating, user:user, beer:beer4, score:10)
-      expect(user.favorite_style).to eq("Pale ale")
+      expect(user.favorite_style.name).to eq("Pale ale")
     end
 
   end

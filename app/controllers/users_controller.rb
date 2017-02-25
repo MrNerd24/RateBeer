@@ -21,6 +21,16 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def toggle_block
+    ensure_that_signed_in_as_admin
+    user = User.find(params[:id])
+    user.update_attribute :blocked, (not user.blocked)
+
+    new_status = user.blocked? ? "frozen" : "unfrozen"
+
+    redirect_to :back, notice:"User freeze status changed to #{new_status}"
+  end
+
   # POST /users
   # POST /users.json
   def create

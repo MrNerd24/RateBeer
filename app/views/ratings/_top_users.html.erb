@@ -1,0 +1,22 @@
+<% sortedUsers = User.all.sort { |a, b| b.ratings.count <=> a.ratings.cont } %>
+
+<table class="table table-hover">
+  <tr>
+    <th></th>
+    <th>Favorite beer</th>
+    <th>Preferred style</th>
+    <th>Favorite Brewery</th>
+    <th>Ratings</th>
+  </tr>
+
+  <% sortedUsers[0..2].each do |u| %>
+      <tr>
+        <td><%= link_to u.username, u %></td>
+        <td><%= link_to u.favorite_beer.name, u.favorite_beer %></td>
+        <td><%= link_to u.favorite_style.name, u.favorite_style %></td>
+        <td><%= link_to u.favorite_brewery.name, u.favorite_brewery %></td>
+        <td><%= u.ratings.count %></td>
+      </tr>
+  <% end %>
+
+</table>

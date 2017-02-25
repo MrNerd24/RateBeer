@@ -9,6 +9,9 @@ class Brewery < ApplicationRecord
 
   include RatingAverage
 
+  scope :active, -> { where active:true }
+  scope :retired, -> { where active:[nil,false] }
+
 
   def less_than_this_year
     if year > Time.now.year

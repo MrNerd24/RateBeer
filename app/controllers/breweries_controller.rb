@@ -6,6 +6,38 @@ class BreweriesController < ApplicationController
   def index
     @active_breweries = Brewery.active
     @retired_breweries = Brewery.retired
+    @breweries = Brewery.all
+
+    order = params[:order] || "name"
+
+
+    @active_breweries = case order
+                          when 'name' then
+                            @active_breweries.sort_by { |b| b.name }
+                          when 'year' then
+                            @active_breweries.sort_by { |b| b.year }
+                        end
+
+    @retired_breweries = case order
+                           when 'name' then
+                             @retired_breweries.sort_by { |b| b.name }
+                           when 'year' then
+                             @retired_breweries.sort_by { |b| b.year }
+                         end
+
+    if session[:breweriesOrder]
+      if session[:breweriesOrder] == order
+        @active_breweries = @active_breweries.reverse
+        @retired_breweries = @retired_breweries.reverse
+        session.delete(:breweriesOrder)
+      else
+        session[:breweriesOrder] = order
+      end
+
+    else
+        session[:breweriesOrder] = order
+    end
+
   end
 
   # GET /breweries/1
@@ -24,13 +56,16 @@ class BreweriesController < ApplicationController
     ensure_that_signed_in
   end
 
+  def list
+  end
+
   def toggle_activity
     brewery = Brewery.find(params[:id])
     brewery.update_attribute :active, (not brewery.active)
 
     new_status = brewery.active? ? "active" : "retired"
 
-    redirect_to :back, notice:"brewery activity status changed to #{new_status}"
+    redirect_to :back, notice: "brewery activity status changed to #{new_status}"
   end
 
   # POST /breweries
